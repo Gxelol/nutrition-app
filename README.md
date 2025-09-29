@@ -1,27 +1,37 @@
-# 🥗 Nutrition Chatbot
+# Project – Intelligent Nutrition Calculations
 
-## 📌 Project Overview
-**Nutrition Chatbot** is an application designed to provide customer support in the field of nutrition, using natural and humanized language.  
-The goal is to create a system capable of answering questions, offering basic guidance, and adapting responses based on the user’s interaction history.  
-
-This project is currently in its **early development phase**:  
-- The **backend** is being built with **NestJS**, using TypeScript for better structure and scalability.  
-- The **frontend** will be developed with **Next.js**, enabling server-side rendering and smooth user experience.  
+##  Overview
+**Project A** is a system for nutritionists that automates standard nutritional calculations (BMI, BMR, TEE, anthropometric ratios, body fat estimates, risk alerts, etc.) directly from patient data.  
+It transforms raw inputs into clear clinical indicators, saving time and reducing manual errors.  
+The nutritionist remains responsible for all dietary planning — the system only provides accurate and standardized calculations.  
 
 ---
 
-## 🛠️ Technologies Used
-- **NestJS (TypeScript)** – backend framework for scalable APIs  
-- **Next.js (React + SSR)** – frontend framework for modern web apps  
-- **CORS** – cross-origin request handling  
-- **REST API** – communication between backend and frontend  
-- **Fetch / Axios** – client-server requests  
+## 🤖 Future Feature – Nutrition Chatbot
+After the main system is finalized, a **Nutrition Chatbot** will be integrated.  
+This chatbot will:  
+- Provide **humanized support** in natural language  
+- Answer **basic nutrition questions**  
+- Adapt responses based on **user history and profile**  
+- Use **generative AI (GPT / Ollama, etc.)** fine-tuned on nutrition datasets  
+
+It will serve as an **assistant layer**, complementing the calculation engine with patient-friendly explanations.
 
 ---
 
-## 🚧 Project Status
-🔨 This project is still under development.  
-Upcoming versions will include:  
-- Integration with **generative AI** (e.g., GPT / Ollama)  
-- Nutrition-specific datasets for fine-tuned answers  
-- User history and personalization features  
+## 🛠️ Technologies
+- **Backend**: NestJS + PostgreSQL  
+- **AI Microservice**: Python + FastAPI + scientific libraries (pandas, numpy, scipy)  
+- **Frontend**: Next.js  
+- **Optional LLM**: GPT/Ollama for natural language explanations and chatbot functionality  
+
+---
+
+## Project Status
+Currently in early development.  
+
+Next milestones:  
+- Implement Python modules for all calculation formulas  
+- Add progress-tracking charts in the frontend  
+- Integrate LLM for optional natural language reports  
+- Begin chatbot integration (post-core release)  
