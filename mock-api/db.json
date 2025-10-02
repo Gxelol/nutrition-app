@@ -1,0 +1,158 @@
+{
+  "nutricionistas": [
+    {
+      "id": 1,
+      "nome": "Dra. Ana Silva",
+      "email": "ana@clinica.com",
+      "brand": {
+        "nome": "AnaNutri",
+        "corPrimaria": "#1E88E5",
+        "logoUrl": "https://example.com/logos/ananutri.png",
+        "mensagemBoasVindas": "Bem-vindo(a)! Aqui cuidamos do seu progresso."
+      }
+    }
+  ],
+  "pacientes": [
+    {
+      "id": 101,
+      "nutricionistaId": 1,
+      "nome": "Carlos Pereira",
+      "idade": 32,
+      "sexo": "M",
+      "altura_cm": 178,
+      "peso_kg": 78.4,
+      "percentual_gordura": 18.2,
+      "observacoes": "Tem intolerância à lactose",
+      "createdAt": "2025-09-01T09:00:00.000Z"
+    },
+    {
+      "id": 102,
+      "nutricionistaId": 1,
+      "nome": "Mariana Costa",
+      "idade": 28,
+      "sexo": "F",
+      "altura_cm": 165,
+      "peso_kg": 64.0,
+      "percentual_gordura": 24.1,
+      "observacoes": "",
+      "createdAt": "2025-09-15T10:30:00.000Z"
+    }
+  ],
+  "dietas": [
+    {
+      "id": 1001,
+      "pacienteId": 101,
+      "titulo": "Hipercalórica - ganho de massa",
+      "total_calorias": 3000,
+      "macros": { "proteina_g": 160, "carboidrato_g": 380, "gordura_g": 80 },
+      "observacoes": "Aumentar carboidrato pós-treino",
+      "createdAt": "2025-09-20T08:00:00.000Z"
+    },
+    {
+      "id": 1002,
+      "pacienteId": 102,
+      "titulo": "Redução leve de gordura",
+      "total_calorias": 1800,
+      "macros": { "proteina_g": 90, "carboidrato_g": 190, "gordura_g": 60 },
+      "observacoes": "Evitar lanches muito calóricos",
+      "createdAt": "2025-09-20T08:10:00.000Z"
+    }
+  ],
+  "refeicoes": [
+    {
+      "id": 5001,
+      "dietaId": 1001,
+      "nome": "Café da manhã",
+      "horario": "08:00",
+      "itens": [
+        { "descricao": "Ovos mexidos (2)", "calorias": 160 },
+        { "descricao": "Pão integral (2 fatias)", "calorias": 180 },
+        { "descricao": "Iogurte sem lactose 200g", "calorias": 120 }
+      ],
+      "calorias": 460
+    },
+    {
+      "id": 5002,
+      "dietaId": 1001,
+      "nome": "Almoço",
+      "horario": "13:00",
+      "itens": [
+        { "descricao": "Arroz integral 180g", "calorias": 220 },
+        { "descricao": "Frango grelhado 150g", "calorias": 270 },
+        { "descricao": "Salada (folhas)", "calorias": 40 }
+      ],
+      "calorias": 530
+    },
+    {
+      "id": 5003,
+      "dietaId": 1002,
+      "nome": "Almoço",
+      "horario": "12:30",
+      "itens": [
+        { "descricao": "Arroz integral 120g", "calorias": 150 },
+        { "descricao": "Peixe 120g", "calorias": 200 },
+        { "descricao": "Legumes cozidos", "calorias": 60 }
+      ],
+      "calorias": 410
+    }
+  ],
+  "registros": [
+    {
+      "id": 9001,
+      "pacienteId": 101,
+      "tipo": "peso",
+      "valor": 78.4,
+      "unidade": "kg",
+      "data": "2025-09-20T07:30:00.000Z"
+    },
+    {
+      "id": 9002,
+      "pacienteId": 101,
+      "tipo": "peso",
+      "valor": 78.0,
+      "unidade": "kg",
+      "data": "2025-09-27T07:30:00.000Z"
+    },
+    {
+      "id": 9003,
+      "pacienteId": 102,
+      "tipo": "peso",
+      "valor": 64.0,
+      "unidade": "kg",
+      "data": "2025-09-20T09:00:00.000Z"
+    }
+  ],
+  "notificacoes": [
+    {
+      "id": 3001,
+      "pacienteId": 101,
+      "tipo": "refeicao",
+      "label": "Café da manhã",
+      "horario": "08:00",
+      "ativo": true
+    },
+    {
+      "id": 3002,
+      "pacienteId": 101,
+      "tipo": "agua",
+      "label": "Hidratação",
+      "intervalo_min": 120,
+      "inicio": "09:00",
+      "fim": "21:00",
+      "ativo": true
+    },
+    {
+      "id": 3003,
+      "pacienteId": 102,
+      "tipo": "refeicao",
+      "label": "Almoço",
+      "horario": "12:30",
+      "ativo": true
+    }
+  ],
+  "settings": {
+    "appName": "NutriApp",
+    "version": "0.1.0",
+    "supportEmail": "suporte@nutriapp.com"
+  }
+}
