@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
@@ -13,10 +12,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
-=======
-  "extends": "@react-native/typescript-config",
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["**/node_modules", "**/Pods"]
->>>>>>> a8392140bc2aaf6857168f1bc89ddc70af996033
+  ],
 }
